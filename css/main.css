@@ -1,0 +1,40 @@
+
+.container
+{ 
+    position: fixed;
+    display: grid;
+    height:100%;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 17px;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: 40px auto 40px;
+
+}
+.header{ 
+    display: flex;
+    font-size: 13px;
+   grid-column: 1/-1;
+    
+}
+.gmail{
+    margin-left: auto;
+}
+
+.content{
+
+    justify-self: center;
+    align-self: center;
+    grid-column: 1/-1;
+
+}
+
+.footer {
+    display:flex;
+    grid-column: 1/-1;
+    font-size: 13px;
+   
+}
+.privacy {
+    margin-left: auto;
+}

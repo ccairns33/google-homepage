@@ -1,74 +1,48 @@
 <!DOCTYPE html>
 <html>
-<!-- Navigation Bar -->
-<nav id="navigation-bar">
-<div class="left-nav">
-    <div id="about">
-        <a href="#">About</a>
-    </div>
-    <div id="store">
-        <a href="#">Store</a>
-    </div>
-</div>
-<div class="right-nav">
-    <div id="gmail">
-        <a href="#">Gmail</a>
-    </div>
-    <div id="images">
-        <a href="#">Images</a>
-    </div>
-</div>
-<div class="signin-nav">
-    <div id="apps-icon"></div>
-        <a href="#"><img src="images/apps-icon.png" alt="google apps logo" width= 25px height= 25px></a>  
-    <div id="signin"></div>
-        <button class="signin-btn"><a href="#" >Sign in</a></button>  
-</div>
-</nav>
+    <head> <link rel="stylesheet" href="css/main.css">
 
+    </head>
 <body>
+<div class="container"> <!-- container-->
+<!-- Navigation Bar -->
+<div class="header">
+        <a class="about"  href="#">About </a>
+        <a class="store" href="#"> Store</a>
+        <a class= "gmail" href="#">Gmail</a>
+        <a class= "images" href="#">Images</a>
+        <a class="apps-logo" href="#"><img src="images/apps-icon.png" alt="google apps logo" width= 25px height= 25px></a>  
+        <button class="signin-btn"><a href="#" >Sign in</a></button> 
+</div>
+
+<div class="content">
 <!-- Google Logo-->
 <div class="google-logo">
-<img src="images/google-logo.png" alt="Google Logo">
+    <img src="images/google-logo.png" alt="Google Logo">
 </div>
 <!-- Search Form-->
 <div class="search-form">
     <input id="search-bar" type="text" value=""> 
+    <div>
     <button class="btn"> Google Search</button>
     <button class="btn"> I'm Feeling Lucky</button>
+    </div>
 </div>
-<!-- Google Search and Feeling Lucky buttons-->
-<div class="body-buttons">
+</div>
 
-</div>
 <!-- Footer navigation-->
-<footer class="footer-links">
+<div class="footer">
 <!-- left side footer-->
-    <div class="left-footer">
-    <div id="advertising">
-        <a href="#">Advertising</a>
-    </div>
-    <div id="business">
-        <a href="#">Business</a>
-    </div>
-    <div id="how-search-works">
-        <a href="#">How Search works</a>
-    </div>
-    </div>
+        <a class="advertising" href="#">Advertising</a>
+        <a class="business" href="#">Business</a>
+        <a class="how-search-works" href="#">How Search Works</a>
 <!-- right side footer-->
-    <div class="right-footer">
-    <div id="privacy">
-         <a href="#">Privacy</a>
-    </div>
-    <div id="terms">
-        <a href="#">Terms</a>
-    </div>
-    <div id="settings">
-        <a href="#">Settings</a>
-    </div>
-
-    </div>
-</footer>
-
+        <a class="privacy" href="#">Privacy</a>
+        <a class="terms" href="#">Terms</a>
+        <a class="settings" href="#">Settings</a>
+</div>
 </body>
+
+</div>
+
 </html>
