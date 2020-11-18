@@ -2,24 +2,77 @@
 .container
 { 
     position: fixed;
-    display: grid;
     height:100%;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-left: 17px;
-    grid-template-columns: repeat(20,1fr);
-    grid-template-rows: 40px auto 40px;
+    margin-right: 17px;
+    font-family: Arial, sans-serif;
 
-}
-.header{ 
-    display: flex;
-    font-size: 13px;
-   grid-column: 1/-1;
     
 }
-.gmail{
-    margin-left: auto;
+.header{ 
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 60px 50px 100px;
+    grid-template-rows: 60px;
+    grid-template-areas: 
+    "a s b g i l sign-in";
+    align-items: center;
+   font-size: 13px;
+    
 }
+
+.about{
+    grid-area: a;
+    color: rgb(46, 44, 44);
+}
+
+.store{
+    grid-area:s;
+    color: rgb(46, 44, 44);
+}
+.gmail{
+    grid-area: g;
+    color: rgb(46, 44, 44);
+    margin-right: auto;
+}
+.images{
+    grid-area:i;
+    color: rgb(46, 44, 44);
+    margin-right: auto;
+
+
+}
+.apps-logo {
+    grid-area:l;
+
+}
+.signin-btn{
+    grid-area: sign-in;
+    font-size: 13px;
+    width: 60px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 5px;
+    background-color:#4285f4;
+}
+.signin-btn > a:link{
+    text-decoration: none;
+    color: whtie;
+    font-weight: bold;
+}
+a:link{
+    text-decoration-line: none;
+}
+.header a:hover{
+    text-decoration: underline;
+    color: rgb(92, 90, 90)
+
+}
+
+
 
 .content{
 
@@ -30,10 +83,11 @@
 }
 
 .footer {
-    display:flex;
-    grid-column: 1/-1;
-    font-size: 13px;
-   
+position: fixed;
+left: 0;
+bottom: 0;
+width:100%;
+font-size: 13px;
 }
 .privacy {
     margin-left: auto;
