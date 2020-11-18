@@ -58,9 +58,7 @@
     border-radius: 5px;
     background-color:#4285f4;
 }
-.signin-btn > a:link{
-    text-decoration: none;
-    color: whtie;
+.signin-btn a:link{
     font-weight: bold;
 }
 a:link{
@@ -71,8 +69,6 @@ a:link{
     color: rgb(92, 90, 90)
 
 }
-
-
 
 .content{
 
@@ -87,8 +83,55 @@ position: fixed;
 left: 0;
 bottom: 0;
 width:100%;
-font-size: 13px;
+
+font-size: 14px;
+align-items: center;
+background-color: rgb(241, 241, 241);
+border: 1px solid rgb(226, 226, 226);
+display: grid;
+grid-template-columns: 90px 90px 150px 1fr 100px 65px 100px;
+grid-template-rows: 40px;
+grid-template-areas: 
+"a b h blank p t s"
 }
-.privacy {
-    margin-left: auto;
+.footer a:hover{
+    text-decoration: underline;
+    color:grey;
 }
+.advertising{
+    margin-left: 25px;
+    color: grey;
+    grid-area: a;
+}
+.business{
+    justify-self: right;
+    color: grey;
+    grid-area: b;
+
+}
+.how-search-works{
+    color: grey;
+    justify-self: right;
+    grid-area: h;
+}
+.privacy{
+    color: grey;
+    justify-self: right;
+    grid-area: p;
+}
+.terms{
+    justify-self: right;
+    color: grey;
+   grid-area: t;
+}
+.settings{
+    color: grey;
+    margin-right: 20px;
+    justify-self: right;
+
+
+    grid-area: s;
+}
+
+
+
